@@ -24,8 +24,9 @@ I started from the guided exercise, then built a cleaner version that:
 | Kaggle starter Random Forest | 7 numeric features | not handled separately | `$21,857` |
 | My numeric Random Forest | all numeric features | median imputation | `$16,925` |
 | My one-hot encoded Random Forest | numeric + categorical features | median/mode imputation | `$16,765` |
+| My one-hot encoded XGBoost model | numeric + categorical features | median/mode imputation | `$14,329` |
 
-The one-hot encoded model improved the validation MAE by about `$160` compared with my numeric-only Random Forest.
+The XGBoost model improved the validation MAE by about `$2,436` compared with my one-hot encoded Random Forest.
 
 ## How to Run
 
@@ -38,7 +39,13 @@ pip install -r requirements.txt
 Then open and run:
 
 ```text
-my_housing_price_model.ipynb
+housing_price_model.ipynb
+```
+
+On macOS, XGBoost may also require the OpenMP runtime:
+
+```bash
+brew install libomp
 ```
 
 ## Source
