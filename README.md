@@ -44,3 +44,7 @@ my_housing_price_model.ipynb
 ## Source
 
 The dataset comes from Kaggle's Housing Prices learning competition.
+
+## Note
+
+GitHub may occasionally have trouble rendering Jupyter Notebook previews directly in the browser. If the notebook does not display correctly, please download housing_price_model.ipynb and open it locally using Jupyter Notebook, JupyterLab, VS Code, or upload it to Kaggle to view the full notebook.
